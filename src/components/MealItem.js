@@ -3,7 +3,7 @@ import Button from "./UI/Button";
 import CartContext from "../store/CartContext";
 
 const MealItem = (props) => {
-    const {addItem} = useContext(CartContext);
+    const {addToCart} = useContext(CartContext);
 
 
     const formatPrice = (price) => {
@@ -14,7 +14,7 @@ const MealItem = (props) => {
     };
 
     const handleAddToCart = () => {
-        addItem(props.meal); 
+        addToCart(props.meal);
     };
 
     return (

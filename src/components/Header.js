@@ -4,15 +4,19 @@ import CartContext from '../store/CartContext'
 import { useContext } from 'react'
 
 const Header = () => {
-    const { cartItems} = useContext(CartContext);
+    const { cartItems } = useContext(CartContext);
+    const totalCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+  
+    const handleButtonClick = () => {
+    };
     return (
         <header id="main-header">
             <div id="title">
-                <img src={logo}/>
+                <img src={logo} alt="logo"/>
                 <h1>React Food Order App</h1>
             </div>
             <nav>
-            <Button>Cart ({cartItems.length})</Button>
+            <Button onCLick={handleButtonClick}>Cart ({totalCount})</Button>
             </nav>
         </header>
     )

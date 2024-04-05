@@ -5,12 +5,14 @@ import { CartProvider } from './store/CartContext'
 
 const App = () => {
  return (
-    <CartProvider>
+  <>
+    <CartProvider >
       <Header />
         <main>
           <Meals />
         </main>
     </CartProvider>
+  </>
   );
 };
 
