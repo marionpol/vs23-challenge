@@ -1,11 +1,11 @@
+import React from 'react';
 
-const Button = (props) => {
-    return (
-        <button className="text-button" type={props.type || 'button'} onClick={props.onClick}
-        disabled={props.disabled}>
-            {props.children}
-        </button>
-    )
-}
+const Button = ({ className, type, onClick, disabled, children }) => {
+  return (
+    <button className={className} type={type || 'button'} onClick={onClick} disabled={disabled}>
+      {children}
+    </button>
+  );
+};
 
-export default Button
+export default Button;

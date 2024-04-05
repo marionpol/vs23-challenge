@@ -14,7 +14,7 @@ const Header = ({openModal}) => {
                 <h1>React Food Order App</h1>
             </div>
             <nav>
-            <Button textonly onClick={openModal}>Cart ({totalCount})</Button>
+            <Button className={"text-button"} onClick={openModal}>Cart ({totalCount})</Button>
             </nav>
         </header>
     )
