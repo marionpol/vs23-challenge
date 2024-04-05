@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./UI/Button";
 
 const MealItem = (props) => {
 
@@ -18,8 +19,8 @@ const MealItem = (props) => {
                     <p className="meal-item-price">{formatPrice(props.meal.price)}</p>
                     <p className="meal-item-description">{props.meal.description}</p>
                 </div>
-                <p className="meal-item-action">
-                    <button >Add to Cart</button>
+                <p className="meal-item-actions">
+                    <Button >Add to Cart</Button>
                 </p>
             </article>
         </li>
