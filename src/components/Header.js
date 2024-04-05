@@ -1,7 +1,7 @@
 import logo from '../assets/logo.jpg'
 import Button from './UI/Button'
 import CartContext from '../store/CartContext'
-import { useContext, useRef } from 'react'
+import { useContext} from 'react'
 
 const Header = ({openModal}) => {
     const { cartItems } = useContext(CartContext);
